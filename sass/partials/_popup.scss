@@ -1,0 +1,210 @@
+/*popup*/
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .4s, visibility .4s;
+ }
+ #form {
+  padding: 0;
+  border: none;
+ }
+ .popup.open {
+  visibility: visible;
+  opacity: 1;
+ }
+ .popup.open .popup_box {
+  transform: scale(1);
+ }
+ .popup.open .popup_box_tnx {
+  transform: scale(1);
+ }
+ 
+ .popup_box {
+  position: relative;
+  width: 436px;
+  height: 350px;
+  z-index: 1;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255);
+  transform: scale(0);
+  transition: transform .8s;
+ }
+ .popup .popup_box h2 {
+  position: absolute;
+  top: 30px;
+  left: 116px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 114%;
+  color: #000000;
+ }
+ .popup_box_tnx {
+  position: relative;
+  width: 436px;
+  height: 224px;
+  z-index: 1;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255);
+  transform: scale(0);
+  transition: transform .8s;
+ }
+ .popup .popup_box_tnx h1 {
+  position: absolute;
+  top: 50px;
+  left: 42px;
+  max-width: 352px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 114%;
+  text-align: center;
+  color: #000000;
+ }
+ 
+ .popup .popup_box .name {
+  position: absolute;
+  width:386px;
+  height: 48px;
+  margin: 88px 0 0 24px;
+  padding: 0 0 0 14px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #1D1B1B;
+  background: #FBFBFB;
+  border: 1px solid #EEEDED;
+  border-radius: 4px;
+ }
+ .popup .popup_box .name:placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #1D1B1B;
+ }
+ .popup .popup_box .phone {
+  position: absolute;
+  width:386px;
+  height: 48px;
+  margin: 146px 0 0 24px;
+  padding: 0 0 0 14px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #1D1B1B;
+  background: #FBFBFB;
+  border: 1px solid #EEEDED;
+  border-radius: 4px;
+ }
+ .popup .popup_box .phone:placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #1D1B1B;
+ }
+ .popup .popup_box .email {
+  position: absolute;
+  width:386px;
+  height: 48px;
+  margin: 204px 0 0 24px;
+  padding: 0 0 0 14px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #1D1B1B;
+  background: #FBFBFB;
+  border: 1px solid #EEEDED;
+  border-radius: 4px;
+ }
+ .popup .popup_box .email:placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #1D1B1B;
+ }
+ .popup .popup_box .send_btn {
+  position: absolute;
+  display: block;
+  width: 386px;
+  height: 42px;
+  top: 266px;
+  right: 25px;
+  z-index: 1;
+  background: #01D957;
+  border: none;
+  border-radius: 27px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  transition: 1s;
+ }
+ .popup .popup_box .send_btn:hover {
+  display: block;
+  width: 386px;
+  height: 42px;
+  background: linear-gradient(45deg,#01D957, #40E0D0, #FF8C00);
+  animation: gradient 4s ease infinite;
+  background-size: 600% 600%;
+  border-radius: 27px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 114%;
+  color: #0D270E;
+  text-align: center;
+  cursor: pointer;
+ }
+ .close_btn {
+  position: absolute;
+  top: 0px;
+  right: -40px;
+  z-index: 3;
+  overflow: visible;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+ }
+ .close_btn svg {
+  pointer-events: none;
+ }
+ .close_btn svg path {
+  transition: fill 2s;
+ }
+ .close_btn:hover svg path {
+  fill: #E8960F;
+ }
+ .close_btn:active svg path {
+  fill: #1C19BB;
+ }
+ /*popup*/
