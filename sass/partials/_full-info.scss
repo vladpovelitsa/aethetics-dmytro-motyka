@@ -60,6 +60,7 @@
     }
     .content {
       margin-bottom: 41px;
+      height: 336px;
       .review {
         display: flex;
         min-height: 73px;
@@ -151,7 +152,7 @@
     h4.mobile {
       display: none;
       @media (max-width: 767px) {
-        display: inline-block;
+        // display: inline-block;
         padding: 0 2px;
         font-size: clamp(18px, 3.3vw, 22px);
         margin: 0 0 30px 0;

@@ -207,4 +207,58 @@
  .close_btn:active svg path {
   fill: #1C19BB;
  }
+
+
+
+
+
+ .popup_box {
+  position: relative;
+  width: 436px;
+  height: 350px;
+  z-index: 1;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255);
+  transform: scale(0);
+  transition: transform .8s;
+ }
+ .popup .popup_box .mode {
+  position: absolute;
+  text-align: center;
+  top: 210px;
+  left: 0px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 114%;
+  color: red;
+ }
+ .mode_img {
+ margin: 50px 0 0 100px;
+  }
+
  /*popup*/
+
+
+//------  Info  setTimeout-----------------
+
+
+.info{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 40px;
+  background: rgb(22, 22, 22, .6);
+  z-index: 99;
+  color: #94e90bfd;
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.info_open{
+  pointer-events: unset;
+  opacity: 1;
+  bottom: 0;
+}
