@@ -1,0 +1,65 @@
+.tabs{
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+
+  
+
+  .tabs__item {
+    display: none;
+}
+.tabs__item.--open {
+    display: block;
+}
+
+
+.tabs__toggler-wrap{
+display: flex;
+}
+
+
+.tabs__toggler{
+  display: flex;
+  font-family: "Candara";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--text);
+  margin: 20px 20px;
+  &:hover {
+    border-bottom: 1px solid var(--text);
+    color: red;
+    } 
+}
+
+.content { 
+  display: block;
+  height: 336px;
+}
+.review{
+  display: flex;
+  align-items: center;
+  .author{
+    width: 108px;
+  }
+}
+.rating{
+  margin: 30px;
+}
+.text{
+  width: 452px;
+}
+}
+
+
+
+.button-write-review{
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+}
